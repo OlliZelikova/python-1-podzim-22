@@ -1,0 +1,17 @@
+baliky = {
+    "B541X": True,
+    "B547X": False,
+    "B251X": False,
+    "B501X": True,
+    "B947X": False,
+}
+
+code = input('Your parcel code:')
+
+for key, value in baliky.items ():
+    if key == code and value == True:
+            print ('Balík byl předán kurýrovi')
+            break
+    
+else:
+    print ('Balík zatím nebyl předán kurýrovi')
